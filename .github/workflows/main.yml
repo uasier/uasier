@@ -22,3 +22,13 @@ jobs:
         env:
           YUQUESECRET: ${{ secrets.YUQUESECRET }}
         run: python main.py
+      - name: commit
+        run: |
+          git config --global user.email admin@uasier.com
+          git config --global user.name uasier
+          git add .
+          git commit -m "update by action" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
