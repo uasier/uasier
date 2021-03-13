@@ -19,4 +19,4 @@ jobs:
       - name: 'Working'
         env:
           SCKEY: ${{ secrets.YUQUESECRET }}
-        run: python uasier/main.py
+        run: python main.py
