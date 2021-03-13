@@ -20,5 +20,5 @@ jobs:
         run: pip install -r requirements.txt
       - name: 'Working'
         env:
-          SCKEY: ${{ secrets.YUQUESECRET }}
+          YUQUESECRET: ${{ secrets.YUQUESECRET }}
         run: python main.py
