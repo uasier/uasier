@@ -6,7 +6,8 @@
 ![Stats](https://github-readme-stats.vercel.app/api?username=uasier)
 
 ## Latest blog posts
-- [2021-03-14 02:01:42 >>> 利用webhook/云函数/github action实现语雀博客目录自动同步到github](https://www.yuque.com/uasier/blog/bwd1zv)
+- [2021-03-14 21:07:31 >>> 初识httprunner](https://www.yuque.com/uasier/blog/lm3s99)
+- [2021-03-14 06:45:24 >>> 利用webhook/云函数/github action实现语雀博客目录自动同步到github](https://www.yuque.com/uasier/blog/bwd1zv)
 - [2021-03-07 04:31:46 >>> 一个稳定复现的微信bug](https://www.yuque.com/uasier/blog/ryzw08)
 - [2021-02-15 17:04:11 >>> jenkins部署](https://www.yuque.com/uasier/blog/mrmhhi)
 - [2021-02-04 14:46:09 >>> 小皮面板](https://www.yuque.com/uasier/blog/mhx5dm)
