@@ -25,7 +25,7 @@ def main_handler():
         headers = {'X-Auth-Token': YUQUESECRET})
         for re in r.json()['data']:
             time_stamp = datetime.datetime.strptime(re['content_updated_at'], '%Y-%m-%dT%H:%M:%S.000Z')
-            f.write('- [{}]({})\n'.format(datetime.datetime.strftime(time_stamp, '%Y-%m-%d %H:%M:%S') + " >>> " + re['title'], BASEURL + re['slug']))
+            f.write('- [{}]({})\n'.format(datetime.datetime.strftime(int(time_stamp) + 3600 * 8, '%Y-%m-%d %H:%M:%S') + " >>> " + re['title'], BASEURL + re['slug']))
         f.write('''
 [>>> More blog posts](https://www.yuque.com/uasier/blog)
 ''')
