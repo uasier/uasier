@@ -1,9 +1,5 @@
 # -*- coding: utf8 -*-
-import datetime
-import json
 import time
-import os
-import dateutil.parser
 
 import requests
 
@@ -25,8 +21,9 @@ def main_handler():
         r = requests.get("https://www.yuque.com/api/v2/repos/uasier/blog/docs",
         headers = {'X-Auth-Token': YUQUESECRET})
         for re in r.json()['data']:
-            d = dateutil.parser.parse(re['content_updated_at'])
-            f.write('- [{}]({})\n'.format(d.strftime('%m/%d/%Y') + " >>> " + re['title'], BASEURL + re['slug']))
+            timeArray = time.strptime(re['content_updated_at'], '%Y-%m-%dT%H:%M:%S.000Z')
+            timestamp = time.mktime(timeArray)
+            f.write('- [{}]({})\n'.format("【" + time.strftime("%Y-%m-%d", time.localtime(int(timestamp + 3600 * 8))) + "】" + re['title'], BASEURL + re['slug']))
         f.write('''
 [>>> More blog posts](https://www.yuque.com/uasier/blog)
 ''')
