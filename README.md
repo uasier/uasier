@@ -6,6 +6,8 @@
 ![Stats](https://github-readme-stats.vercel.app/api?username=uasier)
 
 ## Latest blog posts
+- [【2021-07-22】shell调试技巧](https://www.yuque.com/uasier/blog/ntw8gs)
+- [【2021-07-22】2021半结](https://www.yuque.com/uasier/blog/wyz0is)
 - [【2021-07-20】代码提交协作](https://www.yuque.com/uasier/blog/dwha04)
 - [【2021-07-11】python踩坑（变量赋值）](https://www.yuque.com/uasier/blog/gf29gl)
 - [【2021-03-15】初识httprunner](https://www.yuque.com/uasier/blog/lm3s99)
