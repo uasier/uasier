@@ -12,7 +12,7 @@ def main_handler():
         f.write(r'''
 ## That's me
 * 1996
-* C/C++ Bash/Python/PHP
+* 摸鱼大赛第二名
 ## my Status
 ![Stats](https://github-readme-stats.vercel.app/api?username=uasier)
 ''')
@@ -21,7 +21,11 @@ def main_handler():
 ''')
         r = requests.get("https://www.yuque.com/api/v2/repos/uasier/blog/docs",
         headers = {'X-Auth-Token': YUQUESECRET})
+        i = 0
         for re in r.json()['data']:
+            if i > 7:
+                break
+            i = i + 1
             timeArray = time.strptime(re['content_updated_at'], '%Y-%m-%dT%H:%M:%S.000Z')
             timestamp = time.mktime(timeArray)
             f.write('- [{}]({})\n'.format("【" + time.strftime("%Y-%m-%d", time.localtime(int(timestamp + 3600 * 8))) + "】" + re['title'], BASEURL + re['slug']))
