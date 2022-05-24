@@ -10,11 +10,9 @@ YUQUESECRET = os.environ["YUQUESECRET"]
 def main_handler():
     with open('README.md', 'w') as f:
         f.write(r'''
-## That's me
-* 1996
-* 摸鱼大赛第二名
 ## my Status
 ![Stats](https://github-readme-stats.vercel.app/api?username=uasier)
+![Top Langs](https://github-readme-stats-ryolee.vercel.app/api/top-langs/?username=uasier&layout=compact&langs_count=8&hide_border=true&card_width=256)
 ''')
         f.write(r'''
 ## Latest blog posts
