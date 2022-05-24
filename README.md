@@ -1,9 +1,7 @@
 
-## That's me
-* 1996
-* 摸鱼大赛第二名
 ## my Status
 ![Stats](https://github-readme-stats.vercel.app/api?username=uasier)
+![Top Langs](https://github-readme-stats-ryolee.vercel.app/api/top-langs/?username=uasier&layout=compact&langs_count=8&hide_border=true&card_width=256)
 
 ## Latest blog posts
 - [【2022-05-12】20w3年](https://www.yuque.com/uasier/blog/oylb4s)
